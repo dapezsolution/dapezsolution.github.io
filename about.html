@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | DapezSolution</title>
+<meta name="description" content="Independent research on Iran&#x27;s economy and capital market, in plain English. Feasibility studies, market research, capital market and economic reports.">
+<link rel="alternate" hreflang="en" href="https://dapezsolution.github.io/about.html">
+<link rel="alternate" hreflang="it" href="https://dapezsolution.github.io/it/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="DapezSolution"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="var(--gold)" stroke-width="1"/><text x="16.5" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--blue)" text-anchor="middle">D</text><text x="30" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--gold)" text-anchor="middle">S</text></svg><span class="brand-name"><b>Dapez</b><i>Solution</i></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="services.html">Services</a><a href="research.html">Research</a><a href="newsletter.html">Newsletter</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a>
+      <a class="lang" href="it/about.html" hreflang="it" lang="it" title="Italiano">IT</a>
+      <a class="btn-sm" href="newsletter.html">Subscribe</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="page-head"><div class="wrap narrow">
+  <p class="eyebrow">About</p>
+  <h1>Dara Pezeshkian</h1>
+  <p class="lede">Founder of DapezSolution. Investor and trader on the Tehran Stock Exchange for more than 15 years.</p>
+</div></div>
+<section class="band"><div class="wrap narrow prose">
+  <p>I have traded Tehran-listed equities and options for more than fifteen years, through several currency crises, policy changes and market cycles. Before that I worked in export brokerage, and I have lived and worked in the United States.</p>
+  <p>That combination is the reason DapezSolution exists. I know how Iran's market and economy work day to day, and I know which parts are hard to see from outside: the different exchange rates, administered prices, the trading rules and the gap between official and real figures.</p>
+  <p>I also founded TehranBridge, which helps European companies, particularly from Italy, understand the Iranian market before they enter it.</p>
+  <h2>How I work</h2>
+  <ul>
+    <li>Primary sources first, mostly in Persian, checked against each other.</li>
+    <li>Every figure is sourced. Estimates are labelled.</li>
+    <li>Neutral on politics. The analysis is about economics and markets.</li>
+    <li>Industry-level research only. No tips on individual stocks.</li>
+  </ul>
+  <p><a class="btn" href="contact.html">Get in touch</a></p>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="var(--gold)" stroke-width="1"/><text x="16.5" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--blue)" text-anchor="middle">D</text><text x="30" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--gold)" text-anchor="middle">S</text></svg><span class="brand-name"><b>Dapez</b><i>Solution</i></span></a>
+      <p>Independent research on Iran's economy and capital market, written in Tehran for readers outside the country.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://x.com/dapezsolution" target="_blank" rel="noopener">X @dapezsolution</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Research</h4>
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="legal.html">Disclaimer & privacy</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>Research and analysis only. Nothing on this site is investment advice, a recommendation to buy or sell any security, or an offer of financial services. Paid plans and services are not available to U.S. persons.</p>
+      <p>&copy; 2026 DapezSolution, Tehran.</p>
+    </div>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('.menu-btn'), n = document.getElementById('nav');
+  if (b && n) b.addEventListener('click', function () { var o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+  var f = document.querySelector('.filters');
+  if (f) f.addEventListener('click', function (e) {
+    var btn = e.target.closest('button'); if (!btn) return;
+    f.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === btn ? 'true' : 'false'); });
+    var k = btn.getAttribute('data-k'), shown = 0;
+    document.querySelectorAll('.reports .report').forEach(function (r) { var ok = k === 'all' || r.getAttribute('data-k') === k; r.hidden = !ok; if (ok) shown++; });
+    var em = document.querySelector('.reports-empty'); if (em) em.hidden = shown > 0;
+  });
+})();
+</script>
+</body>
+</html>

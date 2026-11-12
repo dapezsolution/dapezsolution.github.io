@@ -2,252 +2,141 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DapezSolution</title>
-<meta name="description" content="Iran's economy and capital market, explained in plain English. Independent research from Tehran for analysts, risk teams and companies.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DapezSolution | Iran economic and market research</title>
+<meta name="description" content="Independent research on Iran&#x27;s economy and capital market, in plain English. Feasibility studies, market research, capital market and economic reports.">
+<link rel="alternate" hreflang="en" href="https://dapezsolution.github.io/">
+<link rel="alternate" hreflang="it" href="https://dapezsolution.github.io/it/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap">
-<style>
-/* Layout: left-aligned single column, 1040px max; hero pairs the claim with a market "fact sheet" ledger */
-:root {
-  --bg: #fbfcfe;
-  --surface: #f0f3f9;
-  --ink: #141b2e;
-  --muted: #55607a;
-  --blue: #1f3f96;
-  --gold: #a57c22;
-  --line: #d5dbe8;
-  --on-blue: #ffffff;
-  --display: "Libre Caslon Text", Georgia, "Times New Roman", serif;
-  --body: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e1424;
-    --surface: #161e33;
-    --ink: #e9edf7;
-    --muted: #a3adc4;
-    --blue: #8fa9f2;
-    --gold: #d9b45a;
-    --line: #2a3450;
-    --on-blue: #0e1424;
-    color-scheme: dark;
-  }
-}
-* { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--body);
-  font-size: 18px;
-  line-height: 1.6;
-}
-.wrap {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding-left: max(20px, env(safe-area-inset-left, 0px));
-  padding-right: max(20px, env(safe-area-inset-right, 0px));
-}
-a { color: var(--blue); }
-a:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-.top { border-bottom: 1px solid var(--line); }
-.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 16px; flex-wrap: wrap; }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
-.brand svg { width: 44px; height: 44px; flex: none; }
-.brand-name { font-family: var(--display); font-size: 1.35rem; letter-spacing: 0.01em; }
-.brand-name b { color: var(--blue); font-weight: 700; }
-.brand-name i { color: var(--gold); font-style: normal; font-weight: 700; }
-.top nav { display: flex; gap: 22px; flex-wrap: wrap; font-size: 0.95rem; }
-.top nav a { color: var(--muted); text-decoration: none; }
-.top nav a:hover { color: var(--blue); }
-.hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; padding-block: 64px; align-items: start; }
-.hero > .wrap > * { min-width: 0; }
-.eyebrow { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin: 0 0 14px; }
-h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.1rem, 5vw, 3.3rem); line-height: 1.12; margin: 0 0 20px; text-wrap: balance; }
-h1 em { font-style: normal; color: var(--blue); }
-.lede { color: var(--muted); max-width: 34em; margin: 0 0 28px; font-size: 1.1rem; }
-.actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-.btn { display: inline-block; background: var(--blue); color: var(--on-blue); text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 4px; }
-.btn:hover { filter: brightness(1.1); }
-.note { font-size: 0.92rem; color: var(--muted); }
-.sheet { background: var(--surface); border-top: 3px solid var(--gold); padding: 22px 24px 8px; }
-.sheet h2 { font-family: var(--body); font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; font-weight: 700; }
-.sheet dl { margin: 0; }
-.sheet .row { display: grid; grid-template-columns: 8.5em 1fr; gap: 14px; padding: 13px 0; border-top: 1px solid var(--line); font-size: 0.98rem; }
-.sheet dt { color: var(--muted); }
-.sheet dd { margin: 0; font-weight: 600; }
-section { border-top: 1px solid var(--line); }
-section .wrap { padding-block: 56px; }
-h2.title { font-family: var(--display); font-weight: 400; font-size: clamp(1.6rem, 3.4vw, 2.1rem); margin: 0 0 10px; text-wrap: balance; }
-.sub { color: var(--muted); max-width: 38em; margin: 0 0 32px; }
-.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-.grid3 > * { min-width: 0; }
-.item h3 { font-size: 1.12rem; margin: 0 0 8px; color: var(--blue); }
-.item p { margin: 0; color: var(--muted); font-size: 1rem; }
-.item .meta { display: block; margin-top: 10px; font-size: 0.88rem; color: var(--gold); font-weight: 700; letter-spacing: 0.04em; }
-.report { display: block; max-width: 640px; text-decoration: none; color: var(--ink); background: var(--surface); border-top: 3px solid var(--gold); padding: 22px 24px; }
-.report:hover .report-title, .report:focus-visible .report-title { color: var(--blue); text-decoration: underline; }
-.report:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-.report span { display: block; }
-.report-meta { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
-.report-title { font-family: var(--display); font-size: 1.45rem; line-height: 1.25; margin-bottom: 8px; }
-.report-desc { color: var(--muted); font-size: 1rem; margin-bottom: 12px; }
-.report-cta { color: var(--blue); font-weight: 700; font-size: 0.95rem; }
-.for { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
-.for li { padding: 14px 0; border-top: 1px solid var(--line); }
-.for li b { display: block; }
-.for li span { color: var(--muted); font-size: 0.98rem; }
-.about .wrap { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px; }
-.about .wrap > * { min-width: 0; }
-.about p { margin: 0 0 16px; max-width: 36em; }
-.figure { font-family: var(--display); font-size: 3.4rem; line-height: 1; color: var(--blue); }
-.figure small { display: block; font-family: var(--body); font-size: 0.95rem; color: var(--muted); margin-top: 8px; line-height: 1.4; }
-.contact { background: var(--surface); }
-.contact .wrap { display: flex; justify-content: space-between; align-items: center; gap: 28px; flex-wrap: wrap; }
-.contact h2 { margin-bottom: 6px; }
-.contact p { margin: 0; color: var(--muted); max-width: 30em; }
-footer .wrap { padding-block: 28px; font-size: 0.88rem; color: var(--muted); border-top: 1px solid var(--line); }
-footer p { margin: 0 0 6px; max-width: 60em; }
-@media (max-width: 820px) {
-  .hero .wrap, .about .wrap { grid-template-columns: 1fr; gap: 32px; padding-block: 44px; }
-  .grid3 { grid-template-columns: 1fr; gap: 26px; }
-  .for { grid-template-columns: 1fr; }
-  section .wrap { padding-block: 44px; }
-  .top nav { display: none; }
-}
-@media (max-width: 420px) {
-  .sheet .row { grid-template-columns: 1fr; gap: 2px; }
-}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
-<header class="top">
+<header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="DapezSolution home">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="24" cy="24" r="22.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/>
-        <circle cx="24" cy="24" r="18" fill="none" stroke="var(--gold)" stroke-width="1"/>
-        <text x="16.5" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--blue)" text-anchor="middle">D</text>
-        <text x="30" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--gold)" text-anchor="middle">S</text>
-      </svg>
-      <span class="brand-name"><b>Dapez</b><i>Solution</i></span>
-    </a>
-    <nav aria-label="Sections">
-      <a href="#services">Services</a>
-      <a href="#reports">Reports</a>
-      <a href="#clients">Who we work with</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <a class="brand" href="./" aria-label="DapezSolution"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="var(--gold)" stroke-width="1"/><text x="16.5" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--blue)" text-anchor="middle">D</text><text x="30" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--gold)" text-anchor="middle">S</text></svg><span class="brand-name"><b>Dapez</b><i>Solution</i></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="services.html">Services</a><a href="research.html">Research</a><a href="newsletter.html">Newsletter</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a class="lang" href="it/" hreflang="it" lang="it" title="Italiano">IT</a>
+      <a class="btn-sm" href="newsletter.html">Subscribe</a>
     </nav>
   </div>
 </header>
+<main>
 
-<main id="top">
-  <div class="hero">
-    <div class="wrap">
-      <div>
-        <p class="eyebrow">Independent research from Tehran</p>
-        <h1>Iran's economy and capital market, <em>in plain English.</em></h1>
-        <p class="lede">Most Iran data exists. It is published in Persian, spread across many sources, and rarely explained. We collect it, check it, and write it up for people who need to understand the country without guessing.</p>
-        <div class="actions">
-          <a class="btn" href="https://x.com/dapezsolution" target="_blank" rel="noopener">Request a free sample brief</a>
-          <span class="note">Message @dapezsolution on X</span>
-        </div>
-      </div>
-
-      <aside class="sheet" aria-label="Tehran market fact sheet">
-        <h2>Tehran market, at a glance</h2>
-        <dl>
-          <div class="row"><dt>Trading week</dt><dd>Saturday to Wednesday</dd></div>
-          <div class="row"><dt>Fiscal year</dt><dd>Starts around 21 March</dd></div>
-          <div class="row"><dt>Currency</dt><dd>Several exchange rates, each for different transactions</dd></div>
-          <div class="row"><dt>Price moves</dt><dd>Capped by daily limits, so news is priced in over days</dd></div>
-          <div class="row"><dt>Index weight</dt><dd>Led by commodity-linked industries</dd></div>
-        </dl>
-      </aside>
+<div class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow">Independent research from Tehran</p>
+    <h1>Iran's economy and markets, <em>explained with evidence.</em></h1>
+    <p class="lede">Most data on Iran exists. It is published in Persian, spread across many sources and rarely explained. We collect it, check it and turn it into research that companies, analysts and investors outside the country can use.</p>
+    <div class="actions">
+      <a class="btn" href="newsletter.html">Get the free weekly brief</a>
+      <a class="btn-ghost" href="services.html">See services</a>
     </div>
   </div>
+  <aside class="sheet" aria-label="Tehran market at a glance">
+    <h2>Tehran market, at a glance</h2>
+    <dl><div class="row"><dt>Trading week</dt><dd>Saturday to Wednesday</dd></div><div class="row"><dt>Fiscal year</dt><dd>Starts around 21 March</dd></div><div class="row"><dt>Currency</dt><dd>Several exchange rates, each for different transactions</dd></div><div class="row"><dt>Price moves</dt><dd>Capped by daily limits, so news is priced in over days</dd></div><div class="row"><dt>Index weight</dt><dd>Led by commodity-linked industries</dd></div></dl>
+  </aside>
+</div></div>
 
-  <section id="services">
-    <div class="wrap">
-      <h2 class="title">What we do</h2>
-      <p class="sub">Three kinds of work, all written in English and built on primary Persian sources.</p>
-      <div class="grid3">
-        <div class="item">
-          <h3>Industry briefs</h3>
-          <p>One Iranian industry in about ten pages: structure, pricing rules, cost drivers, currency exposure and the main risks.</p>
-          <span class="meta">Delivered in 7 days</span>
-        </div>
-        <div class="item">
-          <h3>Custom research</h3>
-          <p>A specific question about Iran's economy or capital market, answered with sourced data and clear reasoning.</p>
-          <span class="meta">Scoped per project</span>
-        </div>
-        <div class="item">
-          <h3>Ongoing analyst support</h3>
-          <p>Remote research and monitoring for teams that follow Iran and the region and need someone on the ground.</p>
-          <span class="meta">Monthly engagement</span>
-        </div>
-      </div>
+<section class="band"><div class="wrap">
+  <h2>What we do</h2>
+  <p class="sub">Research and hands-on support, built on primary Persian sources and delivered in English or Italian.</p>
+  <div class="grid g3"><div class="item"><h3>Feasibility studies</h3><p>Is a product, project or partnership in Iran workable? Market size, costs, rules, currency exposure and the main risks, assessed before you commit.</p><a class="more" href="services.html#feasibility">Details</a></div>
+<div class="item"><h3>Market research</h3><p>Who buys, who supplies, how prices are set and how the market is changing, for one industry or product category.</p><a class="more" href="services.html#market-research">Details</a></div>
+<div class="item"><h3>Capital market research</h3><p>How the Tehran Stock Exchange works and what moves it: indices, money flows, industries, currency effects and rules.</p><a class="more" href="services.html#capital-market">Details</a></div>
+<div class="item"><h3>Economic reports</h3><p>Inflation, the exchange rate system, budget, energy pricing and policy, explained with data and without political spin.</p><a class="more" href="services.html#economic-reports">Details</a></div>
+<div class="item"><h3>Market entry and business setup</h3><p>From first research to an operating company in Iran: market study, entry structure, registration, accounts, hiring, licences and launch, coordinated in one place.</p><a class="more" href="services.html#market-entry">Details</a></div><div class="item"><h3>Custom reports</h3><p>Any topic in Iran's economy and markets, at the depth and frequency you choose.</p><a class="more" href="#custom">Details</a></div></div>
+</div></section>
+<section class="band tint" id="custom"><div class="wrap">
+  <div class="grid g2">
+    <div>
+      <p class="eyebrow">Made to order</p>
+      <h2>Any report, built around your question</h2>
+      <p class="sub">If what you need is not listed, ask. We write custom reports on any topic in Iran's economy and markets, at the depth and frequency you choose.</p>
+      <ul class="chips"><li>One-off report</li><li>Daily, weekly or monthly updates</li><li>English or Italian</li><li>Web report, Word or Excel</li></ul>
+      <p style="margin-top:24px"><a class="btn" href="mailto:dapezsolution@gmail.com?subject=Request%20a%20quote">Request a custom report</a></p>
     </div>
-  </section>
-
-  <section id="reports">
-    <div class="wrap">
-      <h2 class="title">Reports</h2>
-      <p class="sub">Sample industry briefs. Each one is sourced, written in English, and names industries only, never individual companies.</p>
-      <a class="report" href="reports/iran-pharmaceuticals.html">
-        <span class="report-meta">Industry brief &middot; 12 November 2026</span>
-        <span class="report-title">Iran's pharmaceutical industry in 2026</span>
-        <span class="report-desc">Market size, import dependence, the subsidised medicine exchange rate, shortages and payment delays, and what to watch next.</span>
-        <span class="report-cta">Read the brief</span>
-      </a>
+    <div class="item">
+      <h3>For example</h3>
+      <ul class="ticks"><li>An industry or product category</li><li>A commodity, such as steel, petrochemicals or agricultural goods</li><li>The exchange rate, inflation or the budget</li><li>A new rule or regulation and what it changes</li><li>A province or city as a market</li><li>A data series you cannot find in English</li></ul>
+      <p class="fine" style="margin-top:16px">Custom reports follow the same rules as all our research: sourced figures, neutral language, and no buy or sell recommendations on listed securities.</p>
     </div>
-  </section>
+  </div>
+</div></section>
 
-  <section id="clients">
-    <div class="wrap">
-      <h2 class="title">Who we work with</h2>
-      <p class="sub">People outside Iran whose work depends on reading the country correctly.</p>
-      <ul class="for">
-        <li><b>Country risk and research teams</b><span>Data and context for reports and client notes.</span></li>
-        <li><b>Companies assessing the market</b><span>A clear view of an industry before any commitment.</span></li>
-        <li><b>Commodity and energy analysts</b><span>How Iran's pricing and export rules affect supply.</span></li>
-        <li><b>Journalists and think tanks</b><span>Verified numbers and plain explanations of market events.</span></li>
+<section class="band"><div class="wrap">
+  <h2>Latest research</h2>
+  <p class="sub">Sourced briefs that name industries only, never individual companies.</p>
+  <div class="reports"><a class="report" data-k="industry" href="reports/iran-pharmaceuticals.html">
+  <span class="report-meta">Industry brief &middot; 12 November 2026</span>
+  <span class="report-title">Iran's pharmaceutical industry in 2026</span>
+  <span class="report-desc">Market size, import dependence, the subsidised medicine exchange rate, shortages and payment delays, and what to watch next.</span>
+  <span class="report-cta">Read the brief</span>
+</a></div>
+  <p><a class="btn-ghost" href="research.html">All research</a></p>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="grid g3">
+    <div class="item"><h3>From inside the market</h3><p>Written by a trader with more than 15 years on the Tehran Stock Exchange, who has also lived and worked in the United States.</p></div>
+    <div class="item"><h3>Every number has a source</h3><p>Where sources disagree we show both. Our own estimates are always labelled as estimates.</p></div>
+    <div class="item"><h3>Research, not tips</h3><p>We explain industries and the economy. We do not recommend individual securities or manage money.</p></div>
+  </div>
+</div></section>
+
+<section class="band tint cta"><div class="wrap">
+  <div><h2>Get the weekly brief</h2><p>Iran and the global economy in one short email, every week. Free.</p></div>
+  <a class="btn" href="newsletter.html">Subscribe free</a>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="var(--gold)" stroke-width="1"/><text x="16.5" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--blue)" text-anchor="middle">D</text><text x="30" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--gold)" text-anchor="middle">S</text></svg><span class="brand-name"><b>Dapez</b><i>Solution</i></span></a>
+      <p>Independent research on Iran's economy and capital market, written in Tehran for readers outside the country.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://x.com/dapezsolution" target="_blank" rel="noopener">X @dapezsolution</a></li>
       </ul>
     </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="wrap">
-      <div class="figure">15+<small>years trading and analysing<br>the Tehran Stock Exchange</small></div>
-      <div>
-        <h2 class="title">Written by someone inside the market</h2>
-        <p>DapezSolution is a research consultancy based in Tehran. Our work is written by a trader with more than fifteen years on the Tehran Stock Exchange, who has also lived and worked in the United States.</p>
-        <p>That combination matters. We know how the market works day to day, and we know which parts are hard to see from outside.</p>
-      </div>
+    <div>
+      <h4>Research</h4>
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="legal.html">Disclaimer & privacy</a></li>
+      </ul>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <div>
-        <h2 class="title">Ask for a sample brief</h2>
-        <p>Tell us which Iranian industry you follow. We will send a short sample at no cost.</p>
-      </div>
-      <a class="btn" href="https://x.com/dapezsolution" target="_blank" rel="noopener">Message @dapezsolution on X</a>
+    <div class="legal">
+      <p>Research and analysis only. Nothing on this site is investment advice, a recommendation to buy or sell any security, or an offer of financial services. Paid plans and services are not available to U.S. persons.</p>
+      <p>&copy; 2026 DapezSolution, Tehran.</p>
     </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p>DapezSolution provides research and analysis only. Nothing on this site is investment advice, a recommendation to buy or sell any security, or an offer of financial services.</p>
-    <p>&copy; 2026 DapezSolution, Tehran.</p>
   </div>
 </footer>
-
+<script>
+(function () {
+  var b = document.querySelector('.menu-btn'), n = document.getElementById('nav');
+  if (b && n) b.addEventListener('click', function () { var o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+  var f = document.querySelector('.filters');
+  if (f) f.addEventListener('click', function (e) {
+    var btn = e.target.closest('button'); if (!btn) return;
+    f.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === btn ? 'true' : 'false'); });
+    var k = btn.getAttribute('data-k'), shown = 0;
+    document.querySelectorAll('.reports .report').forEach(function (r) { var ok = k === 'all' || r.getAttribute('data-k') === k; r.hidden = !ok; if (ok) shown++; });
+    var em = document.querySelector('.reports-empty'); if (em) em.hidden = shown > 0;
+  });
+})();
+</script>
 </body>
 </html>
