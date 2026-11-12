@@ -86,6 +86,14 @@ h2.title { font-family: var(--display); font-weight: 400; font-size: clamp(1.6re
 .item h3 { font-size: 1.12rem; margin: 0 0 8px; color: var(--blue); }
 .item p { margin: 0; color: var(--muted); font-size: 1rem; }
 .item .meta { display: block; margin-top: 10px; font-size: 0.88rem; color: var(--gold); font-weight: 700; letter-spacing: 0.04em; }
+.report { display: block; max-width: 640px; text-decoration: none; color: var(--ink); background: var(--surface); border-top: 3px solid var(--gold); padding: 22px 24px; }
+.report:hover .report-title, .report:focus-visible .report-title { color: var(--blue); text-decoration: underline; }
+.report:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.report span { display: block; }
+.report-meta { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 6px; }
+.report-title { font-family: var(--display); font-size: 1.45rem; line-height: 1.25; margin-bottom: 8px; }
+.report-desc { color: var(--muted); font-size: 1rem; margin-bottom: 12px; }
+.report-cta { color: var(--blue); font-weight: 700; font-size: 0.95rem; }
 .for { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 40px; }
 .for li { padding: 14px 0; border-top: 1px solid var(--line); }
 .for li b { display: block; }
@@ -128,6 +136,7 @@ footer p { margin: 0 0 6px; max-width: 60em; }
     </a>
     <nav aria-label="Sections">
       <a href="#services">Services</a>
+      <a href="#reports">Reports</a>
       <a href="#clients">Who we work with</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -182,6 +191,19 @@ footer p { margin: 0 0 6px; max-width: 60em; }
           <span class="meta">Monthly engagement</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="reports">
+    <div class="wrap">
+      <h2 class="title">Reports</h2>
+      <p class="sub">Sample industry briefs. Each one is sourced, written in English, and names industries only, never individual companies.</p>
+      <a class="report" href="reports/iran-pharmaceuticals.html">
+        <span class="report-meta">Industry brief &middot; 12 November 2026</span>
+        <span class="report-title">Iran's pharmaceutical industry in 2026</span>
+        <span class="report-desc">Market size, import dependence, the subsidised medicine exchange rate, shortages and payment delays, and what to watch next.</span>
+        <span class="report-cta">Read the brief</span>
+      </a>
     </div>
   </section>
 
