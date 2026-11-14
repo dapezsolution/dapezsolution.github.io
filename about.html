@@ -26,10 +26,19 @@
 </header>
 <main>
 
-<div class="page-head"><div class="wrap narrow">
-  <p class="eyebrow">About</p>
-  <h1>Dara Pezeshkian</h1>
-  <p class="lede">Founder of DapezSolution. Investor and trader on the Tehran Stock Exchange for more than 15 years.</p>
+<style>
+.about-head .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px); gap: 48px; align-items: center; }
+.about-photo { margin: 0; }
+.about-photo img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line, #d5dbe8); box-shadow: 0 12px 32px rgba(20, 27, 46, 0.12); }
+@media (max-width: 760px) { .about-head .wrap { grid-template-columns: 1fr; gap: 28px; } .about-photo { order: -1; max-width: 300px; } }
+</style>
+<div class="page-head about-head"><div class="wrap">
+  <div>
+    <p class="eyebrow">About</p>
+    <h1>Dara Pezeshkian</h1>
+    <p class="lede">Founder of DapezSolution. Investor and trader on the Tehran Stock Exchange for more than 15 years.</p>
+  </div>
+  <figure class="about-photo"><img src="assets/dara-pezeshkian.jpg" width="680" height="850" alt="Dara Pezeshkian, founder of DapezSolution"></figure>
 </div></div>
 <section class="band"><div class="wrap narrow prose">
   <p>I have traded Tehran-listed equities and options for more than fifteen years, through several currency crises, policy changes and market cycles. Before that I worked in export brokerage, and I have lived and worked in the United States.</p>
