@@ -26,10 +26,19 @@
 </header>
 <main>
 
-<div class="page-head"><div class="wrap narrow">
-  <p class="eyebrow">Chi sono</p>
-  <h1>Dara Pezeshkian</h1>
-  <p class="lede">Fondatore di DapezSolution. Investitore e trader sulla Borsa di Teheran da oltre 15 anni.</p>
+<style>
+.about-head .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px); gap: 48px; align-items: center; }
+.about-photo { margin: 0; }
+.about-photo img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line, #d5dbe8); box-shadow: 0 12px 32px rgba(20, 27, 46, 0.12); }
+@media (max-width: 760px) { .about-head .wrap { grid-template-columns: 1fr; gap: 28px; } .about-photo { order: -1; max-width: 300px; } }
+</style>
+<div class="page-head about-head"><div class="wrap">
+  <div>
+    <p class="eyebrow">Chi sono</p>
+    <h1>Dara Pezeshkian</h1>
+    <p class="lede">Fondatore di DapezSolution. Investitore e trader sulla Borsa di Teheran da oltre 15 anni.</p>
+  </div>
+  <figure class="about-photo"><img src="../assets/dara-pezeshkian.jpg" width="680" height="850" alt="Dara Pezeshkian, fondatore di DapezSolution"></figure>
 </div></div>
 <section class="band"><div class="wrap narrow prose">
   <p>Opero da oltre quindici anni su azioni e opzioni quotate a Teheran, attraverso diverse crisi valutarie, cambi di politica economica e cicli di mercato. In precedenza ho lavorato nell'intermediazione per l'export e ho vissuto e lavorato negli Stati Uniti.</p>
