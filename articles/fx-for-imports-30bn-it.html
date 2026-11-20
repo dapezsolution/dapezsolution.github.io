@@ -74,7 +74,13 @@ ol.src li { margin-bottom: 6px; word-break: break-word; }
 
 <!--site-top-->
 <style>
-.site-header .wrap { max-width: 1080px; }
+.site-header .wrap, .site-footer .wrap, .ask-band .wrap { max-width: 1080px; }
+.site-footer { margin-top: 40px; }
+.site-footer h4 { font-family: var(--body); }
+.ask-band { background: var(--surface); border-top: 1px solid var(--line); }
+.ask-band .wrap { padding-block: 28px; display: flex; gap: 16px 28px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.ask-band p { margin: 0; max-width: 46em; }
+.ask-band a.btn { white-space: nowrap; }
 .site-header .brand { display: flex; font-size: inherit; }
 .site-header .nav a { font-size: 0.95rem; }
 .site-header h4 { margin: 0; }
@@ -141,5 +147,49 @@ ol.src li { margin-bottom: 6px; word-break: break-word; }
   </div>
 </main>
 
+<!--site-foot-->
+<section class="ask-band"><div class="wrap">
+  <p>Domande sui dati, una correzione o un rapporto su misura su un altro tema? Scrivete al nostro ufficio ricerche.</p>
+  <a class="btn" href="mailto:research@dapezsolutions.com">research@dapezsolutions.com</a>
+</div></section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="../it/"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/><circle cx="24" cy="24" r="18" fill="none" stroke="var(--gold)" stroke-width="1"/><text x="16.5" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--blue)" text-anchor="middle">D</text><text x="30" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="var(--gold)" text-anchor="middle">S</text></svg><span class="brand-name"><b>Dapez</b><i>Solution</i></span></a>
+      <p>Ricerca indipendente sull'economia e sul mercato dei capitali iraniani, scritta a Teheran per lettori in tutto il mondo.</p>
+      <ul class="foot-mail">
+        <li>Informazioni e preventivi: <a href="mailto:info@dapezsolutions.com">info@dapezsolutions.com</a></li>
+        <li>Rapporti e newsletter: <a href="mailto:research@dapezsolutions.com">research@dapezsolutions.com</a></li>
+        <li>CV e candidature: <a href="mailto:cv@dapezsolutions.com">cv@dapezsolutions.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Azienda</h4>
+      <ul>
+        <li><a href="../it/services.html">Servizi</a></li>
+        <li><a href="../it/about.html">Chi sono</a></li>
+        <li><a href="../it/contact.html">Contatti</a></li>
+        <li><a href="https://x.com/dapezsolution" target="_blank" rel="noopener">X @dapezsolution</a></li>
+        <li><a href="https://www.linkedin.com/company/dapezsolution/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ricerca</h4>
+      <ul>
+        <li><a href="../it/research.html">Rapporti</a></li>
+        <li><a href="../it/articles.html">Articoli</a></li>
+        <li><a href="../it/newsletter.html">Newsletter</a></li>
+        <li><a href="../it/methodology.html">Metodologia</a></li>
+        <li><a href="../it/legal.html">Avvertenze e privacy</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>Solo ricerca e analisi. Nulla in questo sito costituisce consulenza finanziaria, raccomandazione di acquisto o vendita di titoli o offerta di servizi finanziari. I piani a pagamento e i servizi non sono disponibili per soggetti statunitensi (U.S. persons).</p>
+      <p>&copy; 2026 DapezSolution, Tehran.</p>
+    </div>
+  </div>
+</footer>
+<style>.foot-mail { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 4px; font-size: 0.88rem; } .foot-mail a { text-decoration: underline; }</style>
+<!--/site-foot-->
 </body>
 </html>
