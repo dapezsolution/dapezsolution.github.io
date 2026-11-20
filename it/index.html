@@ -48,9 +48,25 @@
   a.querySelector('.sa-x').addEventListener('click', function () { a.hidden = true; try { localStorage.setItem(k, '1'); } catch (e) {} });
 })();
 </script>
+
 <main>
 
 <div class="ticker" aria-label="Indicatori chiave"><div class="wrap"><ul><li><span class="tk-k">Indice TSE</span><span class="tk-v">8,391,868</span><span class="tk-c down">-1,24%</span></li><li><span class="tk-k">USD, mercato libero</span><span class="tk-v">266,670 IRT</span></li><li><span class="tk-k">Oro 18k, grammo</span><span class="tk-v">24.48m IRT</span><span class="tk-c down">-0,89%</span></li><li><span class="tk-k">Inflazione, ott.</span><span class="tk-v">76.8%</span><span class="tk-c ">annua</span></li></ul><span class="tk-asof">Chiusura, 18 nov 2026</span></div></div>
+<div class="gtape" aria-label="Mercati globali">
+  <div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {"symbols": [{"proName": "TVC:DXY", "title": "Indice dollaro"}, {"proName": "FX:EURUSD", "title": "EUR/USD"}, {"proName": "FX:GBPUSD", "title": "GBP/USD"}, {"proName": "FX:USDJPY", "title": "USD/JPY"}, {"proName": "OANDA:XAUUSD", "title": "Oro"}, {"proName": "OANDA:XAGUSD", "title": "Argento"}, {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"}, {"proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100"}, {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"}, {"proName": "BITSTAMP:ETHUSD", "title": "Ethereum"}, {"proName": "BITSTAMP:XRPUSD", "title": "XRP"}], "showSymbolLogo": true, "isTransparent": true, "displayMode": "adaptive", "colorTheme": "dark", "locale": "it"}
+  </script></div>
+  <div class="gtape-credit"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">Prezzi in tempo reale da TradingView</a></div>
+</div>
+<style>
+.gtape { background: #0b1a40; border-bottom: 1px solid var(--line); position: relative; min-height: 46px; overflow: hidden; }
+.gtape .tradingview-widget-container { height: 46px; max-width: 100%; overflow: hidden; }
+.gtape iframe { max-width: 100%; }
+.gtape-credit { position: absolute; right: 8px; bottom: 1px; font-size: 0.62rem; line-height: 1; }
+.gtape-credit a { color: #7f8db3; text-decoration: none; }
+.gtape-credit a:hover { color: #e9edf7; }
+</style>
 <div class="hero"><div class="wrap">
   <div>
     <p class="eyebrow">Ricerca indipendente da Teheran</p>
