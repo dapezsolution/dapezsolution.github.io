@@ -24,6 +24,30 @@
     </nav>
   </div>
 </header>
+<div class="site-alert" id="site-alert" role="region" aria-label="Nuovo rapporto" data-id="anthropic-ipo-2026-11-20">
+  <div class="wrap">
+    <span class="sa-tag">Nuovo rapporto</span>
+    <a class="sa-link" href="../articles/anthropic-ipo-record-it.html">L'IPO record di Anthropic da 81,3 miliardi: chi si è arricchito, il primo giorno al Nasdaq e i rischi. <b>Leggi ora &rarr;</b></a>
+    <button type="button" class="sa-x" aria-label="Chiudi">&times;</button>
+  </div>
+</div>
+<style>
+.site-alert { background: var(--gold); color: #141b2e; }
+.site-alert .wrap { display: flex; align-items: center; gap: 12px; padding-block: 9px; font-size: 0.92rem; }
+.sa-tag { flex: none; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: #141b2e; color: #fff; padding: 3px 8px; border-radius: 3px; }
+.sa-link { color: #141b2e; text-decoration: none; flex: 1; min-width: 0; }
+.sa-link:hover { text-decoration: underline; }
+.sa-x { flex: none; background: none; border: 0; font-size: 1.4rem; line-height: 1; color: #141b2e; cursor: pointer; padding: 0 4px; }
+@media (max-width: 640px) { .site-alert .wrap { font-size: 0.86rem; align-items: flex-start; } }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('site-alert'); if (!a) return;
+  var k = 'alert-closed-' + a.getAttribute('data-id');
+  try { if (localStorage.getItem(k)) a.hidden = true; } catch (e) {}
+  a.querySelector('.sa-x').addEventListener('click', function () { a.hidden = true; try { localStorage.setItem(k, '1'); } catch (e) {} });
+})();
+</script>
 <main>
 
 <div class="page-head"><div class="wrap">
@@ -33,7 +57,13 @@
 </div></div>
 <section class="band"><div class="wrap">
   <div class="filters" role="group" aria-label="Filtra per tema"><button type="button" data-k="all" aria-pressed="true">Tutti</button><button type="button" data-k="iran" aria-pressed="false">Economia iraniana</button><button type="button" data-k="global" aria-pressed="false">Economia e mercati globali</button></div>
-  <div class="reports"><a class="report" data-k="global" href="../articles/us-fed-three-hikes-it.html">
+  <div class="reports"><a class="report" data-k="global" href="../articles/anthropic-ipo-record-it.html">
+  <span class="report-meta">Mercati globali &middot; 20 novembre 2026</span>
+  <span class="report-title">L'IPO record di Anthropic: cosa è stato venduto, chi si è arricchito e l'effetto sul mercato</span>
+  <span class="report-desc">980 milioni di azioni a 83 dollari per una raccolta record di 81,3 miliardi. Il titolo chiude il primo giorno a +17% mentre l'S&P 500 perde il 2%. Cronologia, azionisti, confronto con 10 IPO, effetto sugli indici e rischi.</span>
+  <span class="report-cta">Leggi il rapporto</span>
+</a>
+<a class="report" data-k="global" href="../articles/us-fed-three-hikes-it.html">
   <span class="report-meta">Economia globale &middot; 19 novembre 2026</span>
   <span class="report-title">I tassi USA supereranno il 5%? Le ipotesi di tre nuovi rialzi della Fed</span>
   <span class="report-desc">Bank of America prevede tre rialzi da un quarto di punto entro marzo 2027, con il tasso al 4,5-4,75%. Su cosa si basa la previsione e perché conta per l'Iran.</span>
