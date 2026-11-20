@@ -24,6 +24,30 @@
     </nav>
   </div>
 </header>
+<div class="site-alert" id="site-alert" role="region" aria-label="New report" data-id="anthropic-ipo-2026-11-20">
+  <div class="wrap">
+    <span class="sa-tag">New report</span>
+    <a class="sa-link" href="articles/anthropic-ipo-record.html">Anthropic's record $81.3bn IPO: who got rich, the first day on Nasdaq, and the risks. <b>Read now &rarr;</b></a>
+    <button type="button" class="sa-x" aria-label="Close">&times;</button>
+  </div>
+</div>
+<style>
+.site-alert { background: var(--gold); color: #141b2e; }
+.site-alert .wrap { display: flex; align-items: center; gap: 12px; padding-block: 9px; font-size: 0.92rem; }
+.sa-tag { flex: none; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: #141b2e; color: #fff; padding: 3px 8px; border-radius: 3px; }
+.sa-link { color: #141b2e; text-decoration: none; flex: 1; min-width: 0; }
+.sa-link:hover { text-decoration: underline; }
+.sa-x { flex: none; background: none; border: 0; font-size: 1.4rem; line-height: 1; color: #141b2e; cursor: pointer; padding: 0 4px; }
+@media (max-width: 640px) { .site-alert .wrap { font-size: 0.86rem; align-items: flex-start; } }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('site-alert'); if (!a) return;
+  var k = 'alert-closed-' + a.getAttribute('data-id');
+  try { if (localStorage.getItem(k)) a.hidden = true; } catch (e) {}
+  a.querySelector('.sa-x').addEventListener('click', function () { a.hidden = true; try { localStorage.setItem(k, '1'); } catch (e) {} });
+})();
+</script>
 <main>
 
 <div class="page-head"><div class="wrap">
@@ -33,7 +57,13 @@
 </div></div>
 <section class="band"><div class="wrap">
   <div class="filters" role="group" aria-label="Filter by topic"><button type="button" data-k="all" aria-pressed="true">All</button><button type="button" data-k="iran" aria-pressed="false">Iran economy</button><button type="button" data-k="global" aria-pressed="false">Global economy and markets</button></div>
-  <div class="reports"><a class="report" data-k="global" href="articles/us-fed-three-hikes.html">
+  <div class="reports"><a class="report" data-k="global" href="articles/anthropic-ipo-record.html">
+  <span class="report-meta">Global markets &middot; 20 November 2026</span>
+  <span class="report-title">Anthropic's record IPO: what was sold, who got rich, and what it did to the market</span>
+  <span class="report-desc">980 million shares at $83 raised a record $81.3bn. The stock closed day one up 17% while the S&P 500 fell 2%. Timeline, shareholders, a 10-IPO comparison, index impact and risks.</span>
+  <span class="report-cta">Read the report</span>
+</a>
+<a class="report" data-k="global" href="articles/us-fed-three-hikes.html">
   <span class="report-meta">Global economy &middot; 19 November 2026</span>
   <span class="report-title">Will US rates go above 5%? The case for three more Fed hikes</span>
   <span class="report-desc">Bank of America expects three quarter-point hikes by March 2027, taking the policy rate to 4.5 to 4.75%. What the forecast rests on, and why it matters for Iran.</span>

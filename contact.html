@@ -24,6 +24,30 @@
     </nav>
   </div>
 </header>
+<div class="site-alert" id="site-alert" role="region" aria-label="New report" data-id="anthropic-ipo-2026-11-20">
+  <div class="wrap">
+    <span class="sa-tag">New report</span>
+    <a class="sa-link" href="articles/anthropic-ipo-record.html">Anthropic's record $81.3bn IPO: who got rich, the first day on Nasdaq, and the risks. <b>Read now &rarr;</b></a>
+    <button type="button" class="sa-x" aria-label="Close">&times;</button>
+  </div>
+</div>
+<style>
+.site-alert { background: var(--gold); color: #141b2e; }
+.site-alert .wrap { display: flex; align-items: center; gap: 12px; padding-block: 9px; font-size: 0.92rem; }
+.sa-tag { flex: none; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: #141b2e; color: #fff; padding: 3px 8px; border-radius: 3px; }
+.sa-link { color: #141b2e; text-decoration: none; flex: 1; min-width: 0; }
+.sa-link:hover { text-decoration: underline; }
+.sa-x { flex: none; background: none; border: 0; font-size: 1.4rem; line-height: 1; color: #141b2e; cursor: pointer; padding: 0 4px; }
+@media (max-width: 640px) { .site-alert .wrap { font-size: 0.86rem; align-items: flex-start; } }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('site-alert'); if (!a) return;
+  var k = 'alert-closed-' + a.getAttribute('data-id');
+  try { if (localStorage.getItem(k)) a.hidden = true; } catch (e) {}
+  a.querySelector('.sa-x').addEventListener('click', function () { a.hidden = true; try { localStorage.setItem(k, '1'); } catch (e) {} });
+})();
+</script>
 <main>
 
 <div class="page-head"><div class="wrap narrow">
